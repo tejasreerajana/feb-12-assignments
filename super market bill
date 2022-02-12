@@ -1,0 +1,29 @@
+soaps=100
+Icecream=350
+pulces=200
+essentials=200
+dry_fruits=700
+cno=int(input("enter customer number:"))
+cname=input("enter customer name:")
+s=int(input("no of soaps:"))
+I=int(input("no of icecream:"))
+p=int(input("no of pulces:"))
+e=int(input("no of essentials:"))
+df=int(input("no of dry fruits:"))
+bill=(soaps*s)+(Icecream*I)+(pulces*p)+(essentials*e)+(dry_fruits*df)
+print("your bill is:",bill)
+if(bill>5000):
+    disc=bill*10/100
+    tax=bill*10/100
+elif(bill>3000):
+    disc=bill*8/100
+    tax=bill*10/100
+elif(bill>2000):
+    disc=bill*5/100
+    tax=bill*18/100
+else:
+    disc=bill*3/100
+    tax=bill*18/100
+
+final_bill=(bill-disc)+tax
+print("your final_bill is:",final_bill)
