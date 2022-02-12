@@ -1,0 +1,10 @@
+p=int(input("enter first number "))
+q=int(input("enter second number "))
+if(p!=q):
+   print("both numbers are not equal")
+   if(p>q):
+     print("p is greater than q")
+   if(p<q):
+       print("q is greater than p")
+else:
+   print("both numbers are equal")
